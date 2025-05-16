@@ -1,3 +1,6 @@
+const slideTitle = document.getElementById("slide-title");
+const btnToIntro = document.getElementById("btn-to-intro");
+const slideIntro = document.getElementById("slide-intro");
 const titleScreen = document.getElementById("title-screen");
 const titleStartBtn = document.getElementById("title-start-btn");
 const startBtn = document.getElementById("start-btn");
@@ -1028,6 +1031,11 @@ let results = [];
 titleStartBtn.onclick = () => {
   titleScreen.classList.remove("active");
   introScreen.classList.add("active");
+};
+
+btnToIntro.onclick = () => {
+  slideTitle.classList.remove("active");
+  slideIntro.classList.add("active");
 };
 
 startBtn.onclick = () => {
