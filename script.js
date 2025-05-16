@@ -1054,7 +1054,7 @@ function showPhaseSummary() {
   document.getElementById("phase-title").textContent = phase.title;
   document.getElementById("phase-description").textContent = phase.description;
   phaseSummaryScreen.classList.remove("hidden");
-}
+};
 
 function showQuestion() {
   const q = questions[currentQuestionIndex];
